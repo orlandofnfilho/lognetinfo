@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--tittle-->
+    <title>Lognet Informática</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="img/lognet-logo.png" alt="logo-lognet" style="max-height: 35px
+                    ;"></a>
+                <!--.navbar-brand-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--.navbar-toggler-->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Principal</a>
+                        </li>
+                        <!--nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/contato.html">Contato</a>
+                        </li>
+                        <!--nav-item-->
+                    </ul>
+                    <!--.navbar-nav-->
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/cadastro.html" class="nav-link text-white">Cadastre-se</a>
+                            </li>
+                            <!--.nav-item-->
+                            <li class="nav-item">
+                                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                            </li>
+                            <!--.nav-item-->
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-primary position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small>4</small></span>
+                                <a href="/carrinho.html" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
+                                </a>
+                            </li>
+                            <!--.nav-item-->
+                        </ul>
+                        <!--.navbar-nav-->
+                    </div>
+                    <!--.align-self-end-->
+                </div>
+                <!--.collapse navbar-->
+            </div>
+            <!--.container-->
+        </nav>
+        <!--.navbar-->
+        <main class="flex-fill">
+            <div class="container">
+                <h1>Carrinho de Compras</h1>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class="col-4 col-md-3 col-lg-2">
+                                <a href="#">
+                                    <img src="img/produto2.jpg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                                <h4>
+                                    <b><a href="#" class="text-decoration-none text-primary">
+                                            Ryzen 5 5600X</a></b>
+                                </h4>
+                                <h5>
+                                    Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4 -
+                                    100-100000065BOX
+                                </h5>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-down" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="4">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-up" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <button class="btn btn-outline-primary border-dark btn-sm" type="button">
+                                        <i class="bi-trash" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                </div>
+                                <div class="text-end mt-2">
+                                    <small class="text-secondary">Valor Unitário: R$ 1.729,90</small><br>
+                                    <span class="text-dark">Valor Item: R$ R$ 1.729,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class="col-4 col-md-3 col-lg-2">
+                                <a href="#">
+                                    <img src="img/produto14.jpg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                                <h4>
+                                    <b><a href="#" class="text-decoration-none text-primary">
+                                            TUF GAMING B550M-PLUS</a></b>
+                                </h4>
+                                <h5>
+                                    PLACA MAE ASUS TUF GAMING B550M-PLUS DDR4 SOCKET AM4 CHIPSET AMD B550
+                                </h5>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-down" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="4">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-up" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <button class="btn btn-outline-primary border-dark btn-sm" type="button">
+                                        <i class="bi-trash" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                </div>
+                                <div class="text-end mt-2">
+                                    <small class="text-secondary">Valor Unitário: R$ 1.099,01</small><br>
+                                    <span class="text-dark">Valor Item: R$ 1.099,01</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class="col-4 col-md-3 col-lg-2">
+                                <a href="#">
+                                    <img src="img/produto15.jpg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                                <h4>
+                                    <b><a href="#" class="text-decoration-none text-primary">
+                                            MEMÓRIA ADATA XPG SPECTRIX D41</a></b>
+                                </h4>
+                                <h5>
+                                    MEMÓRIA ADATA XPG SPECTRIX D41 RGB 32GB (2X16GB) DDR4 3200MHZ CINZA,
+                                    AX4U320016G16A-DT41
+                                </h5>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-down" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="4">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-up" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <button class="btn btn-outline-primary border-dark btn-sm" type="button">
+                                        <i class="bi-trash" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                </div>
+                                <div class="text-end mt-2">
+                                    <small class="text-secondary">Valor Unitário: R$ 1.822,93</small><br>
+                                    <span class="text-dark">Valor Item: R$ 1.822,93</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="row g-3">
+                            <div class="col-4 col-md-3 col-lg-2">
+                                <a href="#">
+                                    <img src="img/produto16.jpg" class="img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                                <h4>
+                                    <b><a href="#" class="text-decoration-none text-primary">
+                                            ZOTAC GEFORCE RTX 3070 TI</a></b>
+                                </h4>
+                                <h5>
+                                    PLACA DE VIDEO ZOTAC GEFORCE RTX 3070 TI TRINITY 8GB GDDR6X 256-BIT, ZT-A30710D-10P
+                                </h5>
+                            </div>
+                            <div
+                                class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-down" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <input type="text" class="form-control text-center border-dark" value="4">
+                                    <button class="btn btn-outline-dark btn-sm" type="button">
+                                        <i class="bi-caret-up" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                    <button class="btn btn-outline-primary border-dark btn-sm" type="button">
+                                        <i class="bi-trash" style="font-size: 16px; line-height: 16px;"></i>
+                                    </button>
+                                </div>
+                                <div class="text-end mt-2">
+                                    <small class="text-secondary">Valor Unitário: R$ 6.899,90</small><br>
+                                    <span class="text-dark">Valor Item: R$ 6.899,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="text-end">
+                            <h4 class="text-dark mb-3">
+                                Valor Total: R$ 11.551,74
+                            </h4>
+                            <a href="/index.html" class="btn btn-outline-success btn-lg">
+                                Continuar Comprando
+                            </a>
+                            <a href="/fechamento_itens.html" class="btn btn-primary btn-lg ms-2 mt-xs-3">Finalizar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!--.container-->
+        </main>
+        <!--.flex-fill-->
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2021 - Lognet Informática<br>
+                        Av. Visc. de Albuquerque, n. 241 - Madalena, Recife - PE<br>
+                        CPNJ 99.999.999/0001-99
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/privacidade.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="/termos.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/contato.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="mailto:contato@lognetinfo.com" class="text-decoration-none text-dark">
+                            contato@lognetinfo.com
+                        </a><br>
+                        Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
+                            (81) 99999-0000
+                        </a>
+                    </div>
+                    <!--.col-->
+                </div>
+                <!--.row-->
+            </div>
+            <!--.container-->
+        </footer>
+        <!--.border-top text-muted bg-light-->
+    </div>
+    <!--.d-flex flex-column wrapper-->
+    <!--boostrap.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

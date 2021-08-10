@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Lognet Informática</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="img/lognet-logo.png" alt="logo-lognet" style="max-height: 35px
+                    ;"></a>
+                <!--.navbar-brand-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--.navbar-toggler-->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Principal</a>
+                        </li>
+                        <!--.nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/contato.html">Contato</a>
+                        </li>
+                        <!--.nav-item-->
+                    </ul>
+                    <!--.navbar-nav-->
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/cadastro.html" class="nav-link text-white">Cadastre-se</a>
+                            </li>
+                            <!--.nav-item-->
+                            <li class="nav-item">
+                                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                            </li>
+                            <!--.nav-item-->
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small>4</small></span>
+                                <a href="/carrinho.html" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
+                                </a>
+                            </li>
+                            <!--.nav-item-->
+                        </ul>
+                        <!--.navbar-nav-->
+                    </div>
+                    <!--.align-self-end-->
+                </div>
+                <!--.collapse navbar-->
+            </div>
+            <!--.container-->
+        </nav>
+        <!--.navbar-->
+
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <!--.carousel-indicators-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/banner1.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img/banner1small.jpg" class="d-block d-md-none  w-100" alt="banner1">
+                    </div>
+                    <!--.carousel-item-->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/banner2.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img/banner2small.jpg" class="d-block d-md-none  w-100" alt="banner2">
+                    </div>
+                    <!--.carousel-item-->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/banner3.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="img/banner3small.jpg" class="d-block d-md-none  w-100" alt="banner3">
+                    </div>
+                    <!--.carousel-item-->
+                </div>
+                <!--.carousel-inner-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <!--.carousel-control-prev-->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+                <!--.carousel-control-next-->
+            </div>
+            <!--#carouselMain-->
+            <hr class="mt-3">
+
+        </div>
+        <!--.container-->
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                <button class="btn btn-primary">Buscar</button>
+                            </div>
+                        </form>
+                        <!--.form-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                                <!--.form-select-->
+                            </form>
+                            <!--.form-->
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <!--.page-item-->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <!--.page-item-->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <!--.page-item-->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <!--.page-item-->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <!--.page-item-->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                    <!--.page-item-->
+                                </ul>
+                                <!--.pagination-->
+                            </nav>
+                            <!--nav-->
+                        </div>
+                        <!--.d-flex-->
+                    </div>
+                    <!--.col-->
+                </div>
+                <!--.row-->
+
+                <hr mt-3>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="img/produto1.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 2.649,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">Ryzen 7 5800X</h5>
+                                <p class="card-text truncar-3l">
+                                    Processador AMD Ryzen 7 5800X, Cache 36MB, 3.8GHz (4.7GHz Max Turbo), AM4 -
+                                    100-100000063WOF
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto2.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 1.729,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">Ryzen 5 5600X</h5>
+                                <p class="card-text truncar-3l">
+                                    Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4 -
+                                    100-100000065BOX
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto3.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 3.499,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">Ryzen 9 5900X</h5>
+                                <p class="card-text truncar-3l">
+                                    Processador AMD Ryzen 9 5900X, Cache 70MB, 3.7GHz (4.8GHz Max Turbo), AM4 -
+                                    100-100000061WOF
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-light disabled mt-2 d-block">
+                                    <small>Reabastecendo Estoque</small>
+                                </a>
+                                <small class="text-primary">
+                                    <b>Produto Esgotado</b>
+                                </small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto4.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 4.499,00
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">I9-10900KF</h5>
+                                <p class="card-text truncar-3l">
+                                    I9-10900KF, 10-CORE, 20-THREADS, 3.7GHZ (5.3GHZ TURBO), CACHE 20MB, LGA1200,
+                                    BX8070110900KF
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto5.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2.619,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">I7-11700KF</h5>
+                                <p class="card-text truncar-3l">
+                                    I7-11700KF, 8-CORE, 16-THREADS, 3.6GHZ (5.0GHZ TURBO), CACHE 16MB, LGA1200,
+                                    BX8070811700KF
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto6.jpg" class="card-img-top">
+                            <div class="card-header">
+                                1.499,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">I5-10600KF</h5>
+                                <p class="card-text truncar-3l">
+                                    I5-10600KF, 6-CORE, 12-THREADS, 4.1GHZ (4.8GHZ TURBO), CACHE 12MB, LGA1200,
+                                    BX8070110600KF
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto9.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2.699,95
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">MSI MPG Z590 GAMING CARBON WIFI</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE MSI MPG Z590 GAMING CARBON WIFI DDR4
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto10.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2.863,32
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">ASROCK Z590 PG VELOCITA</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE ASROCK Z590 PG VELOCITA DDR4 SOCKET LGA1200 CHIPSET INTEL Z590
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi-bi bi-star-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto11.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2.699,95
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">ASROCK Z590 STEEL LEGEND</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE ASROCK Z590 STEEL LEGEND DDR4 SOCKET LGA1200 CHIPSET INTEL Z590
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto12.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 549,45
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">BIOSTAR B365MHC</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE BIOSTAR B365MHC DDR4 SOCKET LGA1151 CHIPSET INTEL B365
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto13.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 499,90
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">ASUS PRIME H310M-E R2.0/BR</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE ASUS PRIME H310M-E R2.0/BR DDR4 SOCKET LGA1151
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-primary">
+                                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="img/produto14.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 1.099,01
+                            </div>
+                            <!--.card-header-->
+                            <div class="card-body">
+                                <h5 class="card-title">TUF GAMING B550M-PLUS</h5>
+                                <p class="card-text truncar-3l">
+                                    PLACA MAE ASUS TUF GAMING B550M-PLUS DDR4 SOCKET AM4 CHIPSET AMD B550
+                                </p>
+                            </div>
+                            <!--.card-body-->
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Disponível</small>
+                            </div>
+                            <!--.card-footer-->
+                        </div>
+                        <!--.card-->
+                    </div>
+                    <!--.col-->
+                </div>
+                <!--.container-->
+
+                <hr class="mt-3">
+
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <!--.form-->
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                                <!--.pagination-->
+                            </nav>
+                            <!--.nav-->
+                        </div>
+                        <!--.d-flex-->
+                    </div>
+                    <!--.col-->
+                </div>
+                <!--.row-->
+            </div>
+            <!--.container-->
+        </main>
+        <!--.flex-fill-->
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2021 - Lognet Informática<br>
+                        Av. Visc. de Albuquerque, n. 241 - Madalena, Recife - PE<br>
+                        CPNJ 99.999.999/0001-99
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/privacidade.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="/termos.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                    </div>
+                    <!--.col-->
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/contato.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="mailto:contato@lognetinfo.com" class="text-decoration-none text-dark">
+                            contato@lognetinfo.com
+                        </a><br>
+                        Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
+                            (81) 99999-0000
+                        </a>
+                    </div>
+                    <!--.col-->
+                </div>
+                <!--.row-->
+            </div>
+            <!--.container-->
+        </footer>
+        <!--.border-top text-muted bg-light-->
+    </div>
+    <!--.d-flex flex-column wrapper-->
+    <!--boostrap.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
