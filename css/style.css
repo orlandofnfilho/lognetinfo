@@ -1,7 +1,28 @@
-body{
+body {
     min-width: 372px;
 }
 
 .wrapper {
     min-height: 100vh;
+}
+
+footer h5 {
+    color: #0275d8;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social-items {
+    list-style: none;
+}
+
+.social-items a {
+    padding: 5px 5px;
+    font-size: 20px;
+    color: #0275d8;
 }
