@@ -1,3 +1,7 @@
+:root{
+    --azul-primary: #0275d8;
+}
+
 body {
     min-width: 372px;
 }
@@ -6,8 +10,10 @@ body {
     min-height: 100vh;
 }
 
+/* footer */
+
 footer h5 {
-    color: #0275d8;
+    color: var(--azul-primary);
     display: flex;
     justify-content: center;
 }
@@ -24,5 +30,15 @@ footer h5 {
 .social-items a {
     padding: 5px 5px;
     font-size: 20px;
-    color: #0275d8;
+    color: var(--azul-primary);
+}
+
+/* truncar paragrafos do card */
+
+p.truncar-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
