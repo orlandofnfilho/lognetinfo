@@ -108,135 +108,53 @@
         <!--.navbar-->
         <main class="flex-fill">
             <div class="container">
-                <h1>Confira os Itens</h1>
-                <h3>Confira os itens e clique em <b>Continuar</b> para prosseguir para a <b>seleção do endereço de
-                        entrega</b>.</h3>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item py-3">
-                        <div class="row g-3">
-                            <div class="col-4 col-md-3 col-lg-2">
-                                <a href="#">
-                                    <img src="img/produto2.jpg" class="img-thumbnail">
-                                </a>
-                            </div>
-                            <!--.col-->
-                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
-                                <h4>
-                                    <b><a href="#" class="text-decoration-none text-primary">
-                                            Ryzen 5 5600X</a></b>
-                                </h4>
-                                <h5>
-                                    Processador AMD Ryzen 5 5600X, Cache 35MB, 3.7GHz (4.6GHz Max Turbo), AM4 -
-                                    100-100000065BOX
-                                    <br>
-                                    <b>
-                                        1 unidade(s) <br>
-                                        R$ 1.729,90
-                                    </b>
-                                </h5>
-                            </div>
-                            <!--.col-->
-                        </div>
-                        <!--.row-->
-                    </li>
-                    <!--.list-group-item-->
-                    <li class="list-group-item py-3">
-                        <div class="row g-3">
-                            <div class="col-4 col-md-3 col-lg-2">
-                                <a href="#">
-                                    <img src="img/produto14.jpg" class="img-thumbnail">
-                                </a>
-                            </div>
-                            <!--.col-->
-                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
-                                <h4>
-                                    <b><a href="#" class="text-decoration-none text-primary">
-                                            TUF GAMING B550M-PLUS</a></b>
-                                </h4>
-                                <h5>
-                                    PLACA MAE ASUS TUF GAMING B550M-PLUS DDR4 SOCKET AM4 CHIPSET AMD B550 <br>
-                                    <b>
-                                        1 unidade(s) <br>
-                                        R$ 1.099,01
-                                    </b>
-                                </h5>
-                            </div>
-                            <!--.col-->
-                        </div>
-                        <!--.row-->
-                    </li>
-                    <!--.list-group-item-->
-                    <li class="list-group-item py-3">
-                        <div class="row g-3">
-                            <div class="col-4 col-md-3 col-lg-2">
-                                <a href="#">
-                                    <img src="img/produto15.jpg" class="img-thumbnail">
-                                </a>
-                            </div>
-                            <!--.col-->
-                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
-                                <h4>
-                                    <b><a href="#" class="text-decoration-none text-primary">
-                                            MEMÓRIA ADATA XPG SPECTRIX D41</a></b>
-                                </h4>
-                                <h5>
-                                    MEMÓRIA ADATA XPG SPECTRIX D41 RGB 32GB (2X16GB) DDR4 3200MHZ CINZA,
-                                    AX4U320016G16A-DT41<br>
-                                    <b>
-                                        1 unidade(s) <br>
-                                        R$ 1.822,93
-                                    </b>
-                                </h5>
-                            </div>
-                            <!--.col-->
-                        </div>
-                        <!--.row-->
-                    </li>
-                    <!--.list-group-item-->
-                    <li class="list-group-item py-3">
-                        <div class="row g-3">
-                            <div class="col-4 col-md-3 col-lg-2">
-                                <a href="#">
-                                    <img src="img/produto16.jpg" class="img-thumbnail">
-                                </a>
-                            </div>
-                            <!--.col-->
-                            <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
-                                <h4>
-                                    <b><a href="#" class="text-decoration-none text-primary">
-                                            ZOTAC GEFORCE RTX 3070 TI</a></b>
-                                </h4>
-                                <h5>
-                                    PLACA DE VIDEO ZOTAC GEFORCE RTX 3070 TI TRINITY 8GB GDDR6X 256-BIT,
-                                    ZT-A30710D-10P<br>
-                                    <b>
-                                        1 unidade(s) <br>
-                                        R$ 6.899,90
-                                    </b>
-                                </h5>
-                            </div>
-                            <!--.col-->
-                        </div>
-                        <!--.row-->
-                    </li>
-                    <!--.list-group-item-->
-                    <li class="list-group-item pt-3 pb-0">
-                        <div class="text-end">
-                            <h4 class="text-dark mb-3">
-                                Valor Total: R$ 11.551,74
-                            </h4>
-                            <a href="/carrinho.html" class="btn btn-outline-success btn-lg mb-3">
-                                Voltar ao Carrinho
-                            </a>
-                            <a href="confirmendereco.html" class="btn btn-primary btn-lg ms-2 mb-3">Continuar</a>
-                        </div>
-                        <!--.text-end-->
-                    </li>
-                    <!--.list-group-item-->
-                </ul>
-                <!--.list-group-->
-
-
+                <h1>Selecione o Endereço de Entrega</h1>
+                <h3 class="mb-4">
+                    Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção da
+                        forma de pagamento</b>.
+                </h3>
+                <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
+                    <div class="mb-4 mx-2 flex-even">
+                        <input type="radio" class="btn-check" name="endereco" 
+                            autocomplete="off" id="end1">
+                        <label class="btn btn-outline-primary p-4 h-100 w-100" for="end1">
+                            <h3>
+                                <b class="text-dark">Casa</b><br>
+                                <hr>
+                                <b>John Wick</b><br>
+                                Cais Santa Rita, 595<br>
+                                São José, Recife - PE<br>
+                                50020-320
+                            </h3>
+                        </label>
+                        <!--.btn-->
+                    </div>
+                    <!--.mb-4-->
+                    <div class="mb-4 mx-2 flex-even">
+                        <input type="radio" class="btn-check" name="endereco" 
+                            autocomplete="off" id="end2">
+                        <label class="btn btn-outline-primary p-4 h-100 w-100" for="end2">
+                            <h3>
+                                <b class="text-dark">Trabalho</b><br>
+                                <hr>
+                                <b>John Wick</b><br>
+                                Cais Santa Rita, 595<br>
+                                São José, Recife - PE<br>
+                                50020-320
+                            </h3>
+                        </label>
+                        <!--.btn-->
+                    </div>
+                    <!--.mb-4-->
+                </div>
+                <!--.d-flex-->
+                <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">                    
+                    <a href="finalizar.html" class="btn btn-outline-success btn-lg mb-4">
+                        Voltar aos Itens
+                    </a>
+                    <a href="finalizarpagamento.html" class="btn btn-primary btn-lg ms-2 mb-4">Continuar</a>
+                </div>
+                <!--.text-end-->
             </div>
             <!--.container-->
         </main>

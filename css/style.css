@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul-primary: #0275d8;
 }
 
@@ -43,8 +43,32 @@ p.truncar-3l {
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 469px){
-    .mt-xs-3{
+/*endereco*/
+
+label:hover .text-dark {
+    transition: color 0.2 ease;
+    color: white !important;
+}
+
+label .text-dark {
+    transition: color 0.2 ease;
+}
+
+.btn-check:checked+.btn-outline-primary .text-dark,
+.btn-check:active+.btn-outline-primary .text-dark,
+.btn-check:hover+.btn-outline-primary .text-dark {
+    transition: color 0.2 ease;
+    color: white !important;
+
+}
+.flex-even{
+    flex: 1;
+    min-width: 300px;
+}
+/* Media Queries */
+
+@media screen and (max-width: 469px) {
+    .mt-xs-3 {
         margin-top: 1rem;
     }
 }
