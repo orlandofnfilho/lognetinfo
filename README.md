@@ -18,7 +18,7 @@
 
 ## 📋 Sobre
 
-O **lognetinfo** é um projeto de e-commerce alternativo da **[Lognet Informática](https://www.lognetinfo.com.br/)**. Com o objetivo de colocar em pratica, os conhecimentos adquiridos em video aulas e durante o estudo do Bootstrap.
+O **lognetinfo** é um projeto de e-commerce alternativo da **[Lognet Informática](https://www.lognetinfo.com.br/)**. Com o objetivo de colocar em prática os conhecimentos adquiridos em video aulas e durante o estudo do Bootstrap.
 
 ---
 
