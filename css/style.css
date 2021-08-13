@@ -77,6 +77,15 @@ fieldset.row .form-floating>label {
     margin-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
+/* descrição */
+h2#preco1{
+    color: red;
+    text-decoration: line-through;
+}
+
+h2#preco2{
+    color: green;
+}
 /* Media Queries */
 
 @media screen and (max-width: 469px) {
