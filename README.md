@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="img/lognetinfo-preview.gif" alt="lognetinfo gif">
+    <img src="lognetinfo-frontend/img/lognetinfo-preview.gif" alt="lognetinfo gif">
 </h1>
 
 <h3 align="center">
